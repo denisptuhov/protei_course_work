@@ -30,3 +30,8 @@ cmake .. && make
 `./traffic_sniffer` - to run sniffer
 
 `./sniffer_tests` - to run tests
+
+### About
+This program works endlessly, printing hosts info every 5 seconds.
+
+To exit press Ctrl+C
