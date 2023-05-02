@@ -18,6 +18,7 @@ enum class SETUP_RESULT_TYPE{
 class ethDevice{
 public:
    explicit ethDevice();
+   ~ethDevice();
 
    void setup_dev_macAdr();
    SETUP_RESULT_TYPE setup();
