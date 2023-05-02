@@ -91,3 +91,10 @@ pcap_t* ethDevice::get_handler(){
 ether_addr ethDevice::get_if_mac(){
     return if_mac;
 }
+
+ethDevice::~ethDevice(){
+    if (handler != NULL) {
+        pcap_close(handler);
+        handler = NULL;
+    }
+}
